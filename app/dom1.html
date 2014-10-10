@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 1</title>
+</head>
+<body>
+<div id="d1">
+    the div1
+</div>
+
+<button id="btn1">the button</button>
+
+<script>
+    var btn1 = document.getElementById('btn1');
+    btn1.addEventListener('click', function (event) {
+        console.log(event);
+        btn1.innerHTML = 'the button click';
+    });
+</script>
+</body>
+</html>
