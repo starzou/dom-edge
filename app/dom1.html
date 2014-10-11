@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>DOM 1</title>
     <style>
+        * {
+            border: solid 1px #c7254e;
+        }
+
         .btn {
             cursor: pointer;
             padding: 3px 6px;
@@ -23,19 +27,22 @@
 </head>
 <body>
 
-<div id="d1">
-    the div1
-</div>
+    <h1> DOM 研究</h1>
 
-<form action="javascript:;">
-    <button id="btn1" class="btn btn-success">the button 1</button>
-    <button id="btn2" class="btn btn-primary">the button 2</button>
-</form>
+    <div id="d1">
+        the div1
+    </div>
 
-<script>
-    console.log('Date : ' + Date.now());
-</script>
-<script src="scripts/dom1.js"></script>
+    <form action="javascript:;">
+        <button id="btn1" class="btn btn-success">the button 1</button>
+        <button id="btn2" class="btn btn-primary">the button 2</button>
+    </form>
+
+    <script>
+        console.log('Date : ' + Date.now());
+    </script>
+
+    <script src="scripts/dom1.js"></script>
 
 </body>
 </html>
