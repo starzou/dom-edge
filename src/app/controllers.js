@@ -1,3 +1,10 @@
+/*
+ * https://github.com/starzou
+ *
+ * Copyright (c) 2014 StarZou
+ * Licensed under the MIT license.
+ */
+
 /**
  *@class controllers
  *@description 控制器模块,所有的控制器注册在此模块下

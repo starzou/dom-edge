@@ -1,3 +1,10 @@
+/*
+ * https://github.com/starzou
+ *
+ * Copyright (c) 2014 StarZou
+ * Licensed under the MIT license.
+ */
+
 /**
  *@class dom1
  *@description
@@ -14,7 +21,7 @@ for (i = 0; i < elements.length; i++) {
 }
 
 function click(event) {
-//    console.log('event : ', event);
+    console.log('event : ', event);
     console.log('this : ', this.tagName);
 }
 
