@@ -16,11 +16,12 @@ So, 你可以使用 gulp serve 运行此项目，或其他的一些gulp命令。
 $ git clone https://github.com/starzou/dom-edge  
 $ cd dom-edge  
 $ npm install && bower install
+```
 
 ## Usage
 ```bash  
 $ gulp serve
-
+```
 
 ## License
 Copyright (c) 2014 StarZou. Licensed under the MIT license.
