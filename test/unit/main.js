@@ -3,7 +3,7 @@
 describe('controllers', function(){
   var scope;
 
-  beforeEach(module('domEdge'));
+  beforeEach(module('App'));
 
   beforeEach(inject(function($rootScope) {
   	scope = $rootScope.$new();

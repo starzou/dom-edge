@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('domEdge')
+angular.module('App')
   .controller('NavbarCtrl', ['$scope', function ($scope) {
     $scope.date = new Date();
   }]);

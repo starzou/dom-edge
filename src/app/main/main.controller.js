@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('domEdge')
+angular.module('App')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       {
