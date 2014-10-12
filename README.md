@@ -20,8 +20,9 @@ $ cd dom-edge
 $ npm install && bower install
 
 ## Usage
-```bash
+```bash  
 $ gulp serve
 
-## License
+
+## License  
 Copyright (c) 2014 StarZou. Licensed under the MIT license.
