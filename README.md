@@ -11,16 +11,20 @@ So, 你可以使用 gulp serve 运行此项目，或其他的一些gulp命令。
 
 在此之前你可能需要先运行 npm install 安装相应的node包；运行 bower install 安装相应的js包。
 
-## Install
+## Get
 ```bash  
 $ git clone https://github.com/starzou/dom-edge  
 $ cd dom-edge  
-$ npm install && bower install
+```
+
+## Install
+```bash  
+$ npm init  
 ```
 
 ## Usage
 ```bash  
-$ gulp serve
+$ npm start
 ```
 
 ## License
