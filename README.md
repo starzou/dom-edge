@@ -19,12 +19,12 @@ $ cd dom-edge
 
 ## Install
 ```bash  
-$ npm init  
+$ npm start  
 ```
 
 ## Usage
 ```bash  
-$ npm start
+$ gulp serve
 ```
 
 ## License
