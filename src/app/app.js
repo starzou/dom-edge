@@ -21,6 +21,9 @@ angular.module('App', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRes
                 templateUrl: 'app/main/main.html',
                 controller: 'MainCtrl'
             })
+            .when('/dom', {
+                templateUrl: 'app/dom/dom1.html'
+            })
             .otherwise({
                 redirectTo: '/'
             });
