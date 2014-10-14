@@ -1,32 +1,33 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="row">
-  <div class="large-12 large-text-center columns">
-    <div class="panel">
-      <h1>'Allo, 'Allo!</h1>
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      <p>Always a pleasure scaffolding your apps.</p>
-      <p><a class="button radius" ng-href="#">Splendid!</a></p>
+    <div class="large-12 large-text-center columns">
+        <div class="panel">
+            <p>高性能Web构建及前沿技术探究.</p>
+            <p>
+                <a class="button radius" target="_blank" ng-href="https://github.com/starzou/dom-edge">Fork Me OnGitHub!</a>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="row">
-  <div class="large-4 columns" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-    <div class="th">
-      <img class="right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-      <div class="caption">
-        <h3>{{awesomeThing.title}}</h3>
-        <p>{{awesomeThing.description}}</p>
-        <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
-      </div>
+    <div class="large-4 columns" ng-repeat="thing in things">
+        <div class="th">
+            <div class="caption">
+                <h3>{{thing.title}}</h3>
+
+                <p ng-repeat="page in thing.pages">
+                    <a ng-href="{{thing.basePath + page.url}}">{{page.title}}</a>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="row">
-  <div class="large-12 columns">
-    <hr>
-    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-  </div>
+    <div class="large-12 columns">
+        <hr>
+        <p>2014 &copy; dom-edge By <a target="_blank" href="https://github.com/starzou">StarZou</a></p>
+    </div>
 </div>

@@ -2,23 +2,27 @@
 
 angular.module('App')
     .controller('MainCtrl', function ($scope) {
-        $scope.awesomeThings = [
+        $scope.things = [
             {
-                'key'        : 'dom',
-                'title'      : 'DOM',
-                'url'        : '#/dom',
-                'description': 'DOM 技术研究!',
-                'logo'       : 'browsersync.png'
+                'title': 'DOM 系列培训',
+                'basePath': 'app/dom/',
+                'pages': [
+                    {
+                        'url': 'dom1.html',
+                        'title': 'DOM 1'
+                    }
+                ]
             },
+
             {
-                'key'        : 'animate',
-                'title'      : 'animate.css',
-                'url'        : 'app/animate/index.html',
-                'description': 'animate.css',
-                'logo'       : 'browsersync.png'
+                'title': 'animate.css 研究',
+                'basePath': 'app/animate/',
+                'pages': [
+                    {
+                        'url': 'index.html',
+                        'title': 'animate 研究'
+                    }
+                ]
             }
         ];
-        angular.forEach($scope.awesomeThings, function (awesomeThing) {
-            awesomeThing.rank = Math.random();
-        });
     });

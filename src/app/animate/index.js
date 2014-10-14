@@ -9,5 +9,5 @@
 var btnView = document.getElementById('btnView');
 var animateElement = document.getElementById('animateElement');
 btnView.addEventListener('click', function (event) {
-    animateElement.class =  'animated bounceOutLeft';
+    animateElement.setAttribute('class', 'animated bounceOutLeft');
 });
