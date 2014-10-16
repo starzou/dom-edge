@@ -8,12 +8,15 @@ angular.module('App')
                 'basePath': 'app/dom/',
                 'pages': [
                     {
-                        'url': 'dom1.html',
-                        'title': 'DOM 1'
+                        'url': 'index.html',
+                        'title': 'DOM 系列培训介绍'
+                    },
+                    {
+                        'url': 'Node.html',
+                        'title': 'Node 类型讲解'
                     }
                 ]
             },
-
             {
                 'title': 'animate.css 研究',
                 'basePath': 'app/animate/',
