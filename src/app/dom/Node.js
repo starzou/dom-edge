@@ -13,5 +13,13 @@
  **/
 'use strict';
 
-var title = document.getElementById('title');
-console.log(title);
+var titleElement = document.getElementById('title'),
+    divElement = document.getElementById('div');
+
+console.log(divElement.childNodes); // 基于DOM的动态查询的结果
+titleElement.childNodes[0].nodeValue = "New Title"; // 改变节点值
+console.log(titleElement);
+
+var h2 = document.createElement('H2'),
+    textNode = document.createTextNode('text...');
+h2.appendChild(textNode);
