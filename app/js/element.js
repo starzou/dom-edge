@@ -14,3 +14,6 @@
 'use strict';
 
 console.log('loaded...');
+
+var divElement = document.getElementById('div');
+console.log(divElement);
