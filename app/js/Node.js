@@ -13,13 +13,25 @@
  **/
 'use strict';
 
-var titleElement = document.getElementById('title'),
-    divElement = document.getElementById('div');
+var h1Node = document.getElementById('title'),
+    divNode = document.getElementById('div');
 
-console.log(divElement.childNodes); // 基于DOM的动态查询的结果
-titleElement.childNodes[0].nodeValue = "New Title"; // 改变节点值
-console.log(titleElement);
+console.log(divNode.childNodes); // 基于DOM的动态查询的结果
+h1Node.childNodes[0].nodeValue = "New Title"; // 改变节点值
+console.log(h1Node);
 
-var h2 = document.createElement('H2'),
-    textNode = document.createTextNode('text...');
-h2.appendChild(textNode);
+var h2Node = document.createElement('h2'),
+    textNode = document.createTextNode('this is text');
+h2Node.appendChild(textNode);
+
+divNode.appendChild(h2Node); // 末尾追加子节点
+divNode.appendChild(h1Node); // 如果子节点存在，则移动位置
+
+
+var h3Node = document.createElement('h3');
+h3Node.innerText = 'H3 Node';
+divNode.insertBefore(h3Node, h2Node); // 插入节点
+
+divNode.replaceChild(h1Node.cloneNode(true), h2Node);//替换节点
+
+divNode.removeChild(h1Node);// 移除节点
