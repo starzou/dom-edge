@@ -10,10 +10,18 @@
     <meta charset="UTF-8">
     <title>Element类型讲解</title>
     <link rel="stylesheet" href="css/dom.css"/>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <div id="div">
-        <h1 id="title">Element类型</h1>
+    <div id="div" my-self="hello">
+        <h1 id="title" title="this is title" class="red title">Element类型</h1>
+        <button id="btnSure" title="a sure button" style="color: green;background-color: #7cb5a0;" onclick="console.log('sure button click');">
+            确定
+        </button>
     </div>
     <script src="js/element.js"></script>
 </body>
