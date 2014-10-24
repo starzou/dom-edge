@@ -35,3 +35,9 @@ sureButton.setAttribute('my-data', '123');
 sureButton.setAttribute('onclick', 'console.log(Date.now());');
 sureButton.onclick();
 console.log(sureButton.getAttribute('onclick'));
+
+var titleElement = document.getElementById('title');
+titleElement.onclick = function () {
+    this.innerHTML += '<h2>title 2</h2>';
+    console.log(this);
+};
