@@ -23,3 +23,9 @@ console.log(div, h1, p);
 var queryElement = document.querySelector('#main-div>.green');
 console.log(queryElement);
 console.log(queryElement === p);
+
+
+var button = div.querySelector('button');
+button.onclick = function () {
+    h1.classList.toggle('green');
+};
