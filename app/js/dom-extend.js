@@ -20,4 +20,6 @@ var div = document.querySelector('#main-div'),
 
 console.log(div, h1, p);
 
-console.log(document.querySelector('#main-div>.green') === p);
+var queryElement = document.querySelector('#main-div>.green');
+console.log(queryElement);
+console.log(queryElement === p);
