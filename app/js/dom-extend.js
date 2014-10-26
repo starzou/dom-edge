@@ -29,3 +29,8 @@ var button = div.querySelector('button');
 button.onclick = function () {
     h1.classList.toggle('green');
 };
+
+// dataset
+var html = document.documentElement;
+html.dataset.version = 'version_' + Date.now();
+console.log(html.innerHTML);
