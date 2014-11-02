@@ -17,3 +17,12 @@ a {
 .inline {
     display: inline;
 }
+
+.ok {
+    color: green;
+}
+
+.no {
+    color: red;
+    font-size: 35px;
+}

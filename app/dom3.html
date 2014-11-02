@@ -11,10 +11,20 @@
     <meta charset="UTF-8">
     <title>DOM 2 & 3</title>
     <link rel="stylesheet" href="css/dom.css"/>
+    <style>
+        .title {
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <div id="div">
-        <h1 id="title">DOM 2 & 3</h1>
+        <h1 id="title" class="no title" style="color: green !important;cursor: pointer;border: 1px solid red;">DOM 2 & 3</h1>
+        <div>
+            <button id="disableButton">禁用样式</button>
+            <button id="insertRuleButton">操作样式规则</button>
+            <button id="iterButton">遍历</button>
+        </div>
     </div>
     <script src="js/dom3.js"></script>
 </body>
