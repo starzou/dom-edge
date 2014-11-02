@@ -10,12 +10,38 @@
     <meta charset="UTF-8">
     <title>DOM 系列培训</title>
     <link rel="stylesheet" href="css/dom.css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var inputContent = document.getElementById('content');
+            var btnSure = document.getElementById('btnSure');
+            var sessionStorageText = document.getElementById('sessionStorageText');
+            var value, other = 'other', kv;
+            btnSure.addEventListener('click', function () {
+                value = inputContent.value;
+                if (value) {
+                    kv = value.split(':');
+                    inputContent.value = '';
+                    sessionStorage.setItem(kv[0], kv[1]);
+                    show();
+                }
+            });
+            function show() {
+                sessionStorageText.innerHTML = JSON.stringify(sessionStorage);
+            }
+        });
+    </script>
 </head>
 <body>
     <h1>DOM 系列培训</h1>
     <p>主要讲解DOM API 使用，实现自己的lite jQuery。</p>
 
-    <h3>内容</h3>
+    <h3 class="inline">内容</h3>
+    <form class="inline">
+        <input type="text" id="content"/>
+        <button type="button" id="btnSure">确认</button>
+    </form>
+    <div id="sessionStorageText"></div>
+
     <ol>
         <li>
             <a href="node.html">Node 类型</a>
