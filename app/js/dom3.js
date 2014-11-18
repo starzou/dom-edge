@@ -52,11 +52,17 @@ insertRuleButton.onclick = function () {
  * 遍历元素
  */
 iterButton.onclick = function () {
-    var iter = document.createNodeIterator(div, NodeFilter.SHOW_ELEMENT, null, false);
     var node;
+    var iter = document.createNodeIterator(div, NodeFilter.SHOW_ELEMENT, null, false);
     while (node = iter.nextNode()) {
         console.log(node);
     }
+
+//    var iter = document.createTreeWalker(div, NodeFilter.SHOW_ELEMENT, null, false);
+//    while (node = iter.nextNode()) {
+//        console.log(node);
+//    }
+
 };
 
 
